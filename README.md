@@ -27,3 +27,6 @@ Our videos are filmed at 60 fps and subsampled to 30 fps for analysis. At such f
 
 #### 2c. Groundtruth clip extraction (track-segmentation/extract_groundtruth_clips.ipynb)
 We use manually-scored groundtruth clips to get initial distribution values for the segmentation models and to validate the results of the segmentation process. This notebook works through a single video and extracts random frames (of those remaining after 2-second subsampling). It then uses these frames as starting frames for 5-second video clips showing individual animals. This step requires access to the pre-cropped individual thumbnails (on the server). The scored clips themselves will be included with the dataset (or maybe just the csv file with the scores and frame ranges).
+
+#### 2d. Score groundtruth clips (track-segmentation/score_groundtruth_clips.ipynb)
+This notebook selects a user-specific number of non-overlapping groundtruth clips and asks the user to view and input the behavioral score for these clips. The output is saved as video_scores.csv.
