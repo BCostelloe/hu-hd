@@ -30,3 +30,6 @@ We use manually-scored groundtruth clips to get initial distribution values for 
 
 #### 2d. Score groundtruth clips (track-segmentation/score_groundtruth_clips.ipynb)
 This notebook selects a user-specific number of non-overlapping groundtruth clips and asks the user to view and input the behavioral score for these clips. The output is saved as video_scores.csv.
+
+#### 2e. Prep data (track-segmentation/prepdata.ipynb)
+This R notebook converts the trajectories into a series of step lengths and turning angles. The generated data are saved in the prepped-data folder and are in the format necessary for use in the momentuHMM package.
